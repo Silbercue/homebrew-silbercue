@@ -19,15 +19,14 @@ class Silbercueswift < Formula
 
   def caveats
     <<~EOS
-      Add SilbercueSwift to your MCP config:
+      Add SilbercueSwift to Claude Code (one command):
 
-        # ~/.claude/.mcp.json (global)
-        {
-          "mcpServers": {
-            "SilbercueSwift": {
-              "command": "#{opt_bin}/SilbercueSwift"
-            }
-          }
+        claude mcp add SilbercueSwift #{opt_bin}/SilbercueSwift
+
+      Or add manually to ~/.claude.json:
+
+        "SilbercueSwift": {
+          "command": "#{opt_bin}/SilbercueSwift"
         }
 
       Requirements: macOS 13+, Xcode 15+
