@@ -7,7 +7,7 @@ class Silbercueswift < Formula
   on_macos do
     on_arm do
       url "https://github.com/silbercue/SilbercueSwift/releases/download/v2.0.0/silbercueswift-v2.0.0-macos-arm64.tar.gz"
-      sha256 "3800e5debb90c9c96d62fe4672f08d9474a3c3c1d2e3cffab4c119133a401c66"
+      sha256 "b64ed5fc214820619d787610f84f1bacd4ef4ae52cfce3d53c31b31286fb1ead"
     end
   end
 
