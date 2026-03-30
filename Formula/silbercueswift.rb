@@ -1,20 +1,20 @@
 class Silbercueswift < Formula
-  desc "The fastest MCP server for iOS development — 40 tools, xcresult parsing, WDA automation"
+  desc "The fastest MCP server for iOS development — 55 tools, xcresult parsing, WDA automation"
   homepage "https://github.com/silbercue/SilbercueSwift"
-  version "0.2.0"
+  version "2.0.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/silbercue/SilbercueSwift/releases/download/v0.2.0/silbercueswift-v0.2.0-macos-arm64.tar.gz"
-      sha256 "845bea24653bc6981c04918bfbb57947b97a36cb05e25392ec43a1c0e5f7ec34"
+      url "https://github.com/silbercue/SilbercueSwift/releases/download/v2.0.0/silbercueswift-v2.0.0-macos-arm64.tar.gz"
+      sha256 "3800e5debb90c9c96d62fe4672f08d9474a3c3c1d2e3cffab4c119133a401c66"
     end
   end
 
   depends_on :macos
 
   def install
-    bin.install "silbercueswift" => "SilbercueSwift"
+    bin.install "SilbercueSwift"
   end
 
   def caveats
@@ -32,11 +32,13 @@ class Silbercueswift < Formula
 
       Requirements: macOS 13+, Xcode 15+
       For UI automation: WebDriverAgent must be installed on the simulator.
+
+      Pro features (12 EUR/mo): silbercueswift activate <YOUR_KEY>
+      Get Pro: https://polar.sh/silbercueswift
     EOS
   end
 
   test do
-    # Binary should start and respond to MCP protocol
     assert_predicate bin/"SilbercueSwift", :executable?
   end
 end
