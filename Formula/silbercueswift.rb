@@ -15,22 +15,17 @@ class Silbercueswift < Formula
 
   def install
     bin.install "SilbercueSwift"
+    (share/"silbercueswift").install "SilbercueWDA"
   end
 
   def caveats
     <<~EOS
-      Add SilbercueSwift to Claude Code (one command):
+      Add SilbercueSwift to Claude Code:
 
         claude mcp add SilbercueSwift #{opt_bin}/SilbercueSwift
 
-      Or add manually to ~/.claude.json:
-
-        "SilbercueSwift": {
-          "command": "#{opt_bin}/SilbercueSwift"
-        }
-
       Requirements: macOS 13+, Xcode 15+
-      For UI automation: WebDriverAgent must be installed on the simulator.
+      SilbercueWDA (UI automation) included at: #{opt_share}/silbercueswift/SilbercueWDA
 
       Pro features (12 EUR/mo): silbercueswift activate <YOUR_KEY>
       Get Pro: https://polar.sh/silbercueswift
@@ -39,5 +34,6 @@ class Silbercueswift < Formula
 
   test do
     assert_predicate bin/"SilbercueSwift", :executable?
+    assert_predicate share/"silbercueswift/SilbercueWDA/SilbercueWDA.xcodeproj", :exist?
   end
 end
