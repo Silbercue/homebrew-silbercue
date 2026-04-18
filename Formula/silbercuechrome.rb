@@ -1,9 +1,9 @@
 class Silbercuechrome < Formula
   desc "Fast MCP server for Chrome browser automation via CDP"
   homepage "https://github.com/Silbercue/silbercuechrome"
-  url "https://github.com/Silbercue/silbercuechrome/releases/download/v1.2.0/silbercuechrome-pro-v1.2.0-macos-arm64.tar.gz"
-  version "1.2.0"
-  sha256 "c16a59c7a366e00bde91b11e4425d0e03ef3708427646825a0ccce12a9188b84"
+  url "https://github.com/Silbercue/silbercuechrome/releases/download/v1.3.0/silbercuechrome-pro-v1.3.0-macos-arm64.tar.gz"
+  version "1.3.0"
+  sha256 "e6772d61086998b1fbcdf225a6ca852d5ba7090dbf52eb7008240b66ab7098a3"
   license "MIT"
 
   depends_on arch: :arm64
