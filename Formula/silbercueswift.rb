@@ -1,5 +1,5 @@
 class Silbercueswift < Formula
-  desc "The fastest MCP server for iOS development — 55 tools, xcresult parsing, WDA automation"
+  desc "The fastest MCP server for iOS development — 49 tools free, xcresult parsing, WDA automation"
   homepage "https://github.com/silbercue/SilbercueSwift"
   version "3.6.3"
   license "MIT"
