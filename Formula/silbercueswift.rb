@@ -1,13 +1,13 @@
 class Silbercueswift < Formula
   desc "The fastest MCP server for iOS development — 55 tools, xcresult parsing, WDA automation"
   homepage "https://github.com/silbercue/SilbercueSwift"
-  version "3.6.2"
+  version "3.6.3"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/silbercue/SilbercueSwift/releases/download/v3.6.2/silbercueswift-v3.6.2-macos-arm64.tar.gz"
-      sha256 "2d6aac4039fbd7b088d20a0f3f54661379f32acaab9a93eb4dedf11a2e9342fc"
+      url "https://github.com/silbercue/SilbercueSwift/releases/download/v3.6.3/silbercueswift-v3.6.3-macos-arm64.tar.gz"
+      sha256 "124ba733f108d6154a8c299a91a8fc548bd1f37093b9cd9ed527233aa65fe61c"
     end
   end
 
